@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Cities in Oregon</title>
+    <title>Ecotourism in the Okavango Delta</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
     <!--add favicon for the web page-->
-    <link rel="shortcut icon" href="img/delta.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon/delta.ico" type="image/x-icon">
     <!--facebook and info icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <!--Font-->
-    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="dist/storymap.2.3.css">
     <!--add required libraries-->
@@ -54,8 +54,8 @@
                     </h1>
                 </div>
             </section>
-            <section data-scene="portland">
-                <h2>Portland</h2>
+            <section data-scene="overview">
+                <h2>Overview of Okavango Delta</h2>
                 <p>Portland is a seaport and the largest city in the U.S. state of Oregon and the seat of Multnomah
                     County. It is in the Willamette Valley region of the Pacific Northwest, at the confluence of the
                     Willamette and Columbia Rivers. The city covers 145 square miles (380 square kilometers) and had an
@@ -76,8 +76,8 @@
                     the eighth most popular American city, based on where people want to live. </p>
             </section>
 
-            <section data-scene="corvallis">
-                <h2>Corvallis</h2>
+            <section data-scene="wildlife">
+                <h2>Wildlife</h2>
                 <p>Corvallis is a city in central western Oregon, United States. It is the county seat of Benton County
                     and the principal city of the Corvallis, Oregon Metropolitan Statistical Area, which encompasses all
                     of Benton County. As of the 2010 United States Census, the population was 54,462. Its population was
@@ -99,8 +99,8 @@
                     over.</p>
             </section>
 
-            <section data-scene="eugene">
-                <h2>Eugene</h2>
+            <section data-scene="lodge">
+                <h2>Lodges</h2>
                 <p>Eugene is a city of the Pacific Northwest located in the U.S. state of Oregon. It is located at the
                     southern end of the Willamette Valley, near the confluence of the McKenzie and Willamette Rivers,
                     about 50 miles (80 km) east of the Oregon Coast.</p>
@@ -117,8 +117,8 @@
                     Championships.</p>
             </section>
 
-            <section data-scene="salem">
-                <h2>Salem</h2>
+            <section data-scene="climate">
+                <h2>Climate</h2>
                 <p>Salem is the capital of the U.S. state of Oregon, and the county seat of Marion County. It is located
                     in the center of the Willamette Valley alongside the Willamette River, which runs north through the
                     city. The river forms the boundary between Marion and Polk counties, and the city neighborhood of
@@ -137,7 +137,7 @@
                     Center Street bridges.</p>
             </section>
             <section data-scene="bend">
-                <h2>Bend</h2>
+                <h2>Threats of Ecotoursim</h2>
                 <p>Bend is a city in, and the county seat of Deschutes County, Oregon, United States. It is the
                     principal city of the Bend, Oregon Metropolitan Statistical Area. Bend is Central Oregon's largest
                     city, and despite its modest size, is the de facto metropolis of the region, owing to the low
@@ -155,7 +155,7 @@
             </section>
 
             <section data-scene="oregon">
-                <h2>Oregon</h2>
+                <h2>Future of Eco-tourism</h2>
                 <p>Oregon was inhabited by many indigenous tribes before Western traders, explorers, and settlers
                     arrived. An autonomous government was formed in the Oregon Country in 1843 before the Oregon
                     Territory was created in 1848. Oregon became the 33rd state on February 14, 1859. Today, at 98,000
@@ -176,12 +176,7 @@
             <section data-scene="end" data-background="assets/end.jpg">
                 <div class="fullscreen text-center">
                     <br/>
-                    <h1 class="">Thanks for watching!!!</h1>
-                    <h1>
-                        <small style="color: rgba(255,255,255,0.95)">Download Storymap.js from
-                            http://github.com/jakobzhao/storymap
-                        </small>
-                    </h1>
+                    <h1 class="">Thanks for watching!</h1>
                 </div>
             </section>
 
@@ -200,7 +195,7 @@
         </dt>
         <dt>
             <!--facebook icon-->
-            <a class="fa fa-git-square btn" href="https://github.com/jakobzhao/storymap" style="top:40px"
+            <a class="fa fa-git-square btn" href="https://github.com/hannahfriedrich/delta" style="top:40px"
                target="_blank"></a>
         </dt>
         <dt>
@@ -223,7 +218,7 @@
                         storymap plugin for leaflet at <a>http://atlefren.github.io/storymap/</a>, and its functionality
                         relies on both leaflet and Boostrap.</p>
                     <p><b>storymap.js</b> | Released Date: 02/20/2017 | Version: 2.1 | MIT License </p>
-                    <p><b>Author: Bo Zhao</b> | College of Earth, Ocean, Atmospheric Science | Oregon State University
+                    <p><b>Author: Hannah Friedrich</b> | College of Earth, Ocean, Atmospheric Science | Oregon State University
                     </p>
                     <p>The context about Oregon cities was collected from Wikipedia.</p>
                     <p>The <a href="https://www.youtube.com/watch?v=UJ_vQC9PNY4">background video</a> on the front page
@@ -242,7 +237,7 @@
 
 
     // Create Legend Contents in html format
-    var county_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>Counties</b></p>';
+    var catchment_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>Okavango Delta Basin</b></p>';
     var forest_legend = '<i style="background: green; opacity: 0.5"></i><p><b>Forest</b></p>';
 
     // For each layer, the first variable is the layer, the second is the legend. The layer variable can be any kinds of layers that leaflet.js supports.
@@ -253,35 +248,42 @@
     // }
 
     var layers = {
-        ESRI: {layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}')},
-        counties: {
-            layer: L.geoJson.ajax('../../assets/counties.geojson', {
-                color: 'orange',
+        catchment: {
+            layer: L.geoJson.ajax('assets/catchment.geojson', {
+                color: 'blue',
                 weight: 2,
                 opacity: 0.3
-            }), legend: county_legend
+            }), legend: catchment_legend
         },
-        GEE: {
-            layer: L.tileLayer('http://earthengine.google.org/static/hansen_2013/tree_alpha/{z}/{x}/{y}.png'),
-            legend: forest_legend
+        reserve: {
+            layer: L.geoJson.ajax('assets/reserve.geojson', {
+                color: 'green',
+                weight: 2,
+                opacity: 0.3
+            }), legend: catchment_legend
+        },
+        accommodations: {
+            layer: L.geoJson.ajax('assets/accomodation.geojson', {
+                color: 'red',
+                weight: 2,
+                opacity: 0.3
+            }), legend: catchment_legend
         },
         satellite: {
             layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw', {
                 id: 'mapbox.satellite'
-            })
-        },
-        cartodb_light: {layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png')}
-    };
+            }),
+
 
     var scenes = {
-        overview: {lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'Cover Page'},
-        portland: {lat: 45.5186089, lng: -122.7270297, zoom: 11, name: 'Portland'},
-        corvallis: {lat: 44.5701158, lng: -123.2949388, zoom: 14, name: 'Corvallis', layers: ['ESRI']},
-        eugene: {lat: 44.0549563, lng: -123.0958048, zoom: 13, name: 'Eugene'},
-        salem: {lat: 44.9419055, lng: -123.0356407, zoom: 13, name: 'Salem'},
-        bend: {lat: 44.0519385, lng: -121.3042125, zoom: 14, name: 'Bend', layers: ['counties', 'satellite']},
-        oregon: {lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'Oregon State', layers: ['counties', 'GEE']},
-        end: {lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'The End'}
+        overview: {lat: -18.0000000, lng: 22.5000000, zoom: 9, name: 'Overview',layers: ['catchment', 'satellite']},
+        wildlife: {lat: -18.0000000, lng: 22.5000000, zoom: 9, name: 'Wildlife', layers: ['catchment', 'satellite']},
+        lodge: {lat: -18.0000000, lng: 22.5000000, zoom: 9, name: 'Lodges', layers: ['accomodation', 'satellite']},
+        climate: {lat: -18.0000000, lng: 22.5000000, zoom: 9, name: 'Climate', layers: ['catchment', 'satellite']},
+        salem: {lat: -18.0000000, lng: 22.5000000, zoom: 9, name: 'Salem', layers: ['catchment', 'satellite']},
+        bend: {lat: -18.0000000, lng: 22.5000000, zoom: 9, name: 'Bend', layers: ['catchment', 'satellite']},
+        oregon: {lat: -18.0000000, lng: 22.5000000, zoom: 6, name: 'Oregon State', layers: ['catchment', 'satellite']},
+        end: {lat: -18.0000000, lng: 22.5000000, zoom: 7, name: 'The End'}
     };
 
     $('#storymap').storymap({
@@ -296,11 +298,11 @@
 
         createMap: function () {
             // create a map in the "map" div, set the view to a given place and zoom
-            var map = L.map($(".storymap-map")[0], {zoomControl: false, scrollWheelZoom: false}).setView([44, -120], 7);
+            var map = L.map($(".storymap-map")[0], {zoomControl: false, scrollWheelZoom: false}).setView([-19, 22], 7);
 
             //add an miniglobe
             new L.Control.GlobeMiniMap({
-                marker: 'red',
+                marker: 'green',
                 position: 'bottomright'
             }).addTo(map);
 
