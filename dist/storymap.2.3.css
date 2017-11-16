@@ -26,9 +26,9 @@ h1 {
     margin: 20px;
     padding-top: 100px;
     font-family: 'Berkshire Swash', cursive !important;
-    color: rgba(255, 255, 255, 0.95);
+    color: rgba(217, 96, 50, 0.95);
     font-size: 50px;
-    text-shadow: 0 0 6px rgba(0, 0, 0, .95);
+    text-shadow: 0 0 6px rgba(228, 228, 228, 0.95);
 }
 
 .storymap-breakpoint-current {
@@ -311,8 +311,8 @@ video {
     width: 0;
     height: 3px;
     z-index: 1030;
-    background: rgba(255, 30, 0, 0.80);
-    box-shadow: 0 0 2px rgba(98, 16, 0, 0.9);
+    background: rgba(100, 217, 227, 0.8);
+    box-shadow: 0 0 2px rgba(97, 147, 101, 0.9);
 }
 
 
