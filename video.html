@@ -50,7 +50,7 @@
     <div class="row">
         <div class="col-sm-6 col-md-4 storymap-story">
             <section data-scene="overview" data-background="assets/delta.mp4">
-                <div class="fullscreen text-center">
+                <div class="fullscreen text-right">
                     <h1>Okavango Delta</h1>
                     <h1>
                         <small style="color: rgba(255,255,255,0.95)"> This story map explains the eco-tourism industry in the Okavango Delta in Namibia.
@@ -58,7 +58,7 @@
                     </h1>
                 </div>
             </section>
-            <section data-scene="overview">
+            <section data-scene="about">
                 <h2>Overview of Okavango Delta</h2>
                 <p>Portland is a seaport and the largest city in the U.S. state of Oregon and the seat of Multnomah
                     County. It is in the Willamette Valley region of the Pacific Northwest, at the confluence of the
@@ -80,8 +80,8 @@
                     the eighth most popular American city, based on where people want to live. </p>
             </section>
 
-            <section data-scene="wildlife">
-                <h2>Wildlife</h2>
+            <section data-scene="reserve">
+                <h2>Parks and Reserves</h2>
                 <p>Corvallis is a city in central western Oregon, United States. It is the county seat of Benton County
                     and the principal city of the Corvallis, Oregon Metropolitan Statistical Area, which encompasses all
                     of Benton County. As of the 2010 United States Census, the population was 54,462. Its population was
@@ -103,8 +103,8 @@
                     over.</p>
             </section>
 
-            <section data-scene="lodge">
-                <h2>Lodges</h2>
+            <section data-scene="biodiversity">
+                <h2>Biodiversity</h2>
                 <p>Eugene is a city of the Pacific Northwest located in the U.S. state of Oregon. It is located at the
                     southern end of the Willamette Valley, near the confluence of the McKenzie and Willamette Rivers,
                     about 50 miles (80 km) east of the Oregon Coast.</p>
@@ -121,8 +121,8 @@
                     Championships.</p>
             </section>
 
-            <section data-scene="climate">
-                <h2>Climate</h2>
+            <section data-scene="lodge">
+                <h2>Ecotourism: Lodges</h2>
                 <p>Salem is the capital of the U.S. state of Oregon, and the county seat of Marion County. It is located
                     in the center of the Willamette Valley alongside the Willamette River, which runs north through the
                     city. The river forms the boundary between Marion and Polk counties, and the city neighborhood of
@@ -140,23 +140,6 @@
                     Oregon Route 22, which connects West Salem across the Willamette River via the Marion Street and
                     Center Street bridges.</p>
             </section>
-            <section data-scene="bend">
-                <h2>Threats of Ecotoursim</h2>
-                <p>Bend is a city in, and the county seat of Deschutes County, Oregon, United States. It is the
-                    principal city of the Bend, Oregon Metropolitan Statistical Area. Bend is Central Oregon's largest
-                    city, and despite its modest size, is the de facto metropolis of the region, owing to the low
-                    population density of that area. Bend recorded a population of 76,693 at the time of the 2010 U.S.
-                    Census, up from 52,029 at the 2000 census. The estimated population of the city as of 2013 is
-                    81,236. Bend's metro population was estimated at 165,954 as of July 1, 2013. The Bend MSA is the
-                    fifth largest metropolitan area in Oregon.</p>
-                <p>Bend is located on the eastern edge of the Cascade Range along the Deschutes River. Here the
-                    Ponderosa Pine forest transitions into the high desert, characterized by arid land, junipers,
-                    sagebrush, and bitter-brush. Originally a crossing point on the river, settlement began in the early
-                    1900s. Bend was incorporated as a city in 1905. Economically, it started as a logging town but is
-                    now identified as a gateway for many outdoor sports, including mountain biking, fishing, hiking,
-                    camping, rock climbing, white-water rafting, skiing, paragliding and golf. In 2015, Men's Journal
-                    ranked Bend as one of The 10 Best Places to Live Now.</p>
-            </section>
 
             <section data-scene="oregon">
                 <h2>Future of Eco-tourism</h2>
@@ -169,7 +152,7 @@
                     as the 26th most populous city in the United States. Portland's metro population of 2,389,228 ranks
                     the 23rd largest metro in the nation. The Willamette Valley in western Oregon is the state's most
                     densely populated area, home to eight of the ten most populous cities.</p>
-                <img src="../../img/oregon_flag.png" class="img-responsive" alt="responsive image"
+                <img src="img/lodge.jpg" class="img-responsive" alt="responsive image"
                      alt-text="the flag of oregon">
                 <p>Oregon's landscape is diverse, with a windswept Pacific coastline; a volcano-studded Cascade Range;
                     abundant bodies of water in and west of the Cascades; dense evergreen, mixed, and deciduous forests
@@ -245,13 +228,6 @@
     var lodge_legend = '<i style="background: green; opacity: 0.5"></i><p><b>Lodges</b></p>';
     var elephant_legend = '<i style="background: green; opacity: 0.5"></i><p><b>Elephant Habitat</b></p>';
 
-    // For each layer, the first variable is the layer, the second is the legend. The layer variable can be any kinds of layers that leaflet.js supports.
-    // var layers = {
-    //      layer1: {layer: layer1, legend: legend1},
-    //      layer2: {layer: layer2, legend: legend2}
-    //      ...
-    // }
-
     var layers = {
         catchment: {
             layer: L.geoJson.ajax('assets/catchment.geojson', {
@@ -268,7 +244,7 @@
             }), legend: reserve_legend
 
         },
-        elephant: {
+        biodiversity: {
             layer: L.geoJson.ajax('assets/elephant.geojson', {
                 color: 'red',
                 weight: 2,
@@ -289,12 +265,11 @@
 
 
     var scenes = {
-        overview: {lat: -18.0000000, lng: 20.5000000, zoom: 6, name: 'Overview', layers: ['catchment']},
-        reserve: {lat: -18.0000000, lng: 22.5000000, zoom: 9, name: 'Parks and Reserves', layers: ['reserve']},
-        lodge: {lat: -18.0000000, lng: 22.5000000, zoom: 9, name: 'Lodges', layers: ['lodge']},
-        elephant: {lat: -18.0000000, lng: 22.5000000, zoom: 9, name: 'Wildlife', layers: ['elephant']},
-        salem: {lat: -18.0000000, lng: 22.5000000, zoom: 9, name: 'Salem', layers: ['catchment']},
-        bend: {lat: -18.0000000, lng: 22.5000000, zoom: 9, name: 'Bend', layers: ['catchment']},
+        overview: {lat: 2.0000000, lng: 14.5000000, zoom: 6, name: 'Overview'},
+        about: {lat: -20.0000000, lng: 13.5000000, zoom: 6, name: 'About', layers: ['catchment']},
+        reserve: {lat: -18.0000000, lng: 22.5000000, zoom: 7, name: 'Parks and Reserves', layers: ['reserve']},
+        biodiversity: {lat: -18.0000000, lng: 22.5000000, zoom: 7, name: 'Biodiversity', layers: ['elephant']},
+        lodge: {lat: -18.0000000, lng: 22.5000000, zoom: 7, name: 'Lodges', layers: ['lodge']},
         oregon: {lat: -18.0000000, lng: 22.5000000, zoom: 6, name: 'Oregon State', layers: ['catchment']},
         end: {lat: -18.0000000, lng: 22.5000000, zoom: 7, name: 'The End'}
     };
