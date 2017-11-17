@@ -24,11 +24,62 @@ body {
 
 h1 {
     margin: 20px;
-    padding-top: 100px;
+    padding-top: 30px;
+    font-family: 'Berkshire Swash', cursive !important;
+    color: rgba(217, 54, 43, 0.95);
+    font-size: 50px;
+    text-shadow: 0 0 6px rgba(255, 220, 149, 0.95);
+}
+
+h2 {
+    margin: 20px;
     font-family: 'Berkshire Swash', cursive !important;
     color: rgba(217, 96, 50, 0.95);
+    font-size: 30px;
+    text-shadow: 0 0 6px rgba(255, 220, 149, 0.95);
+}
+
+h4 {
+    margin: 20px;
+    font-family: 'Berkshire Swash', cursive !important;
+    color: rgba(217, 96, 50, 0.95);
+    font-size: 30px;
+    text-shadow: 0 0 6px rgba(255, 220, 149, 0.95);
+}
+
+h3 {
+    margin: 20px;
+    padding-top: 20px;
+    font-family: 'Berkshire Swash', cursive !important;
+    color: rgba(217, 96, 50, 0.95);
+    font-size: 30px;
+    text-shadow: 0 0 6px rgba(255, 220, 149, 0.95);
+}
+
+h5 {
+    margin: 40px;
+    padding-top: 50px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: rgba(237, 237, 237, 0.95);
+    font-size: 20px;
+    text-shadow: 0 0 6px rgba(217, 96, 50, 0.95);
+}
+
+
+h6 {
+    margin: 30px;
+    padding-top: 30px;
+    font-family: 'Berkshire Swash', cursive !important;
+    color: rgba(217, 54, 43, 0.95);
     font-size: 50px;
-    text-shadow: 0 0 6px rgba(228, 228, 228, 0.95);
+    text-shadow: 0 0 6px rgba(255, 220, 149, 0.95);
+}
+
+p {
+    margin: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: rgba(49, 49, 49, 0.95);
+    font-size: 20px
 }
 
 .storymap-breakpoint-current {
@@ -269,7 +320,7 @@ video {
 .storymap-legend {
     position: fixed;
     line-height: 16px;
-    width: 100px;
+    width: 200px;
     z-index: 1000;
     right: 20px;
     top: 30px;
@@ -299,6 +350,7 @@ video {
 }
 
 .storymap-legend p {
+    padding-top: 3px;
     font-size: 12px;
     line-height: 16px;
     margin: 0;
@@ -342,4 +394,8 @@ nav li a,
 .btn:hover {
     color: rgba(0, 117, 255, 0.6);
     text-decoration: none;
+}
+
+.lodge-style {
+    color: #59ccd6;
 }
