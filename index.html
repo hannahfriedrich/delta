@@ -234,14 +234,14 @@
         lodge: {
             layer: L.geoJson.ajax('assets/accomodation.geojson', {
                 pointToLayer: function (feature, latlng) {
-                   return L.marker(latlng, {icon: L.divIcon({className: 'glyphicon glyphicon-home lodge-style'})});
+                    return L.marker(latlng, {icon: L.divIcon({className: 'glyphicon glyphicon-home lodge-style'})});
                 }})
             ,legend: lodge_legend
         },
         satellite: {
             layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw',{
                 id: 'mapbox.satellite'})
-    }};
+        }};
 
 
     var scenes = {
