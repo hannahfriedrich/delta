@@ -8,7 +8,7 @@ Story map can be viewed [here][].
 Landing page with video taken from a boat going along the Okavango River sets the scene for the type of landscape.
 
 ### Conflict
-I think the conflict is hinted in the sub title of web map.
+I think the conflict is hinted in the sub title of web map, "A Natural "
 
 ### Rising Action
 
@@ -17,6 +17,7 @@ I think the conflict is hinted in the sub title of web map.
 ### Falling Action
 
 ### Resolution
+Although there is no clear resolution for this
 
 ## Data Sources
 
